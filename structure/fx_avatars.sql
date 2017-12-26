@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v11.11 (64 bit)
-MySQL - 5.5.5-10.1.29-MariaDB : Database - blizzcms
+MySQL - 5.6.38-log : Database - blizzcms
 *********************************************************************
 */
 
@@ -21,6 +21,10 @@ CREATE TABLE `fx_avatars` (
   `type` int(1) NOT NULL DEFAULT '1' COMMENT '1 = user | 2 = staff',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+/*Data for the table `fx_avatars` */
+
+insert  into `fx_avatars`(`id`,`name`,`type`) values (1,'avatar1.png',1),(2,'avatar2.png',1),(3,'avatar3.png',1),(4,'avatar4.png',1),(5,'avatar5.png',1),(6,'avatar6.png',2);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
