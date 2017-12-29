@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.6.38-log : Database - blizzcms
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -24,7 +25,26 @@ CREATE TABLE `fx_avatars` (
 
 /*Data for the table `fx_avatars` */
 
-insert  into `fx_avatars`(`id`,`name`,`type`) values (1,'avatar1.png',1),(2,'avatar2.png',1),(3,'avatar3.png',1),(4,'avatar4.png',1),(5,'avatar5.png',1),(6,'avatar6.png',2);
+DELETE FROM `fx_avatars` WHERE `id` BETWEEN 1 AND 17;
+
+INSERT INTO `fx_avatars` (`id`, `name`, `type`) VALUES
+(1, 'arthas.png', 1),
+(2, 'deathwing.png', 1),
+(3, 'garrosh.png', 1),
+(4, 'ghoul.png', 1),
+(5, 'hogger.png', 1),
+(6, 'illidan.png', 1),
+(7, 'kelthuzad.png', 1),
+(8, 'kiljeaden.png', 1),
+(9, 'lurker.png', 1),
+(10, 'maiev.png', 1),
+(11, 'malfurion.png', 1),
+(12, 'neptulon.png', 1),
+(13, 'nerzhul.png', 1),
+(14, 'velen.png', 1),
+(15, 'worgen.png', 1),
+(16, 'imp.png', 1),
+(17, 'vault_guardian.png', 1);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
