@@ -21,15 +21,15 @@ DROP TABLE IF EXISTS `fx_realms`;
 
 CREATE TABLE `fx_realms` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `hostname` varchar(255) DEFAULT NULL,
+  `hostname` varchar(255) DEFAULT '127.0.0.1',
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `char_database` varchar(255) DEFAULT NULL,
   `realmID` int(1) NOT NULL,
   `console_username` varchar(255) DEFAULT NULL,
   `console_password` varchar(255) DEFAULT NULL,
-  `console_port` int(6) DEFAULT NULL,
-  `emulator` varchar(255) DEFAULT NULL,
+  `console_port` int(6) DEFAULT '7878',
+  `emulator` varchar(255) DEFAULT 'TC',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
