@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.7.21-0ubuntu0.16.04.1 : Database - blizzcms
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -33,8 +34,6 @@ CREATE TABLE `fx_realms` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 /*Data for the table `fx_realms` */
-
-insert  into `fx_realms`(`id`,`hostname`,`username`,`password`,`char_database`,`realmID`,`console_username`,`console_password`,`console_port`,`emulator`) values (1,'127.0.0.1','root','j2d4l0p3ap','characterslegion',1,'KMTEST@GMAIL.COM','KMTEST',7878,'TC'),(3,'127.0.0.1','root','j2d4l0p3ap','characters',2,'KMTEST@GMAIL.COM','KMTEST',7878,'TC');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
